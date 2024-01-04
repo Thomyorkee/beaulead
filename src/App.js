@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const App = () => {
 
-    console.log(window.location.pathname);
-
     return (
         <BrowserRouter>
             <Routes>
