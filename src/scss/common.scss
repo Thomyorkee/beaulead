@@ -1,0 +1,71 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+$font: 'Pretendard';
+$fontR: "400";
+$MainColor: #1d9be2;
+
+body {
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(29, 23, 23, 0.3);
+        background-clip: padding-box;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0px 0px 2px white;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    color: $MainColor;
+    font-family: $font;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+    cursor: pointer;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+._cp {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
