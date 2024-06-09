@@ -1,19 +1,21 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from "react";
+import Main from "./page/main";
+import Finish from "./page/finish";
+import Header from "./component/header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
-
-    return (
-        <React.Fragment>
-            <div>TEST</div>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<div className='main'><p>page1</p></div>} />
-                    <Route path="/login" element={<div className='main'><p>page2</p></div>} />
-                </Routes>
-            </BrowserRouter>
-        </React.Fragment>
-    );
+  return (
+    <React.Fragment>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/finish" element={<Finish />} />
+        </Routes>
+      </BrowserRouter>
+    </React.Fragment>
+  );
 };
 
 export default App;
